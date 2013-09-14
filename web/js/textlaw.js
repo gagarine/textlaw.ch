@@ -25,7 +25,7 @@ $(document).ready(function() {
 	});
 
 	function searchFunction(searchable, searchTerm) {
-	          searchable.hide().filter(":contains('" + searchTerm + "')").show(); 
+	          searchable.hide().filter(":icontains('" + searchTerm + "')").show();
 	}
 });
 
