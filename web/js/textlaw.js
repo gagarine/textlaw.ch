@@ -12,6 +12,10 @@ $(document).ready(function() {
 	
     var searchable = $('.searchable').find(".subpage");
 
+  $('#SearchForm').on('submit',function(e){
+    e.preventDefault();
+  });
+
 	$('#searchInput').on( "keyup", function(){
 		var searchTerm = $(this).val();
 		console.log(searchTerm);
