@@ -1,0 +1,15 @@
+{
+  "name": "jquery-highlight",
+  "homepage": "https://github.com/knownasilya/jquery-highlight",
+  "version": "3.1.1",
+  "_release": "3.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.1.1",
+    "commit": "fa7f87334e04e2f69464820257b14384787d1fa7"
+  },
+  "_source": "git://github.com/knownasilya/jquery-highlight.git",
+  "_target": "~3.1.1",
+  "_originalSource": "jquery-highlight",
+  "_direct": true
+}
