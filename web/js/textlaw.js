@@ -1,8 +1,10 @@
 // case insensitive :contain
-jQuery.expr[":"].icontains = jQuery.expr.createPseudo(function (arg) {
-  return function (elem) {
-    return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
-  };
+$.extend($.expr[':'], {
+  'containsi': function(elem, i, match, array)
+  {
+    return (elem.textContent || elem.innerText || '').toLowerCase()
+      .indexOf((match[3] || "").toLowerCase()) >= 0;
+  }
 });
 
 
@@ -25,7 +27,7 @@ $(document).ready(function() {
 	});
 
 	function searchFunction(searchable, searchTerm) {
-	          searchable.hide().filter(":icontains('" + searchTerm + "')").show();
+	          searchable.hide().filter(":containsi('" + searchTerm + "')").show();
 	}
 });
 
